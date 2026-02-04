@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: raw_orders
+    description: "Table de test créée avec dbt pour valider la création de modèles"
+
+    columns:
+      - name: id
+        description: "Identifiant unique de la ligne"
+        tests:
+          - not_null
+          - unique
+
+      - name: Prenom
+        description: "Prénom de la personne"
+        tests:
+          - not_null
+
+      - name: Nom
+        description: "Nom de famille de la personne"
+        tests:
+          - not_null
+
+      - name: Age
+        description: "Âge de la personne"
+        tests:
+          - not_null
+
+      - name: Ecole
+        description: "École de d'apprentissage"
