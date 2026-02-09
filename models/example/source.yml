@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: my-projet-bdt
+    schema: dbt_alexspecops
+    tables:
+      - name: user_searches
+        description: "Données de recherches utilisateurs depuis Supabase (via Airbyte)"
