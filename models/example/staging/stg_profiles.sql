@@ -2,9 +2,9 @@
 
 SELECT
     id,
-    created_at,
-    updated_at,
-    email,
     first_name,
-    last_name
+    last_name,
+    email,
+    created_at
+    
 FROM {{ source('raw', 'profiles') }}
