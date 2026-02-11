@@ -7,3 +7,6 @@ sources:
     tables:
       - name: user_searches
         description: "Données de recherches utilisateurs depuis Supabase (via Airbyte)"
+      - name: profiles
+
+
